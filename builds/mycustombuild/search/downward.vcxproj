@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>downward</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">downward.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">downward</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">downward.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">downward</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Profile\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">downward.dir\Profile\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">downward</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/search/Debug/downward.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Debug/downward.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/search/Release/downward.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Release/downward.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Profile/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/search/Profile/downward.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Profile/downward.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\DownwardFiles.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\cmake_modules\FindOSI.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\DownwardFiles.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\cmake_modules\FindOSI.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/search/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\DownwardFiles.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\cmake_modules\FindOSI.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.5\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.5\Modules\CMakeParseArguments.cmake;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\search\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\util.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\single_potential_heuristics.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\sample_based_potential_heuristics.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_optimizer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_max_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_function.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\diverse_potential_heuristics.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\zero_one_pdbs_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\zero_one_pdbs.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\validation.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\types.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pdb_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator_manual.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator_greedy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_systematic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_manual.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_hillclimbing.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_genetic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_combo.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_database.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_information.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\max_cliques.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\max_additive_pdb_sets.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\match_tree.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\incremental_canonical_pdbs.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\dominance_pruning.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\canonical_pdbs_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\canonical_pdbs.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\state_equation_constraints.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\pho_constraints.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\operator_counting_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\lm_cut_constraints.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\constraint_generator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\util.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_status_manager.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_graph_merged.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_graph.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_zhu_givan.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_rpg_sasp.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_rpg_exhaust.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_count_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_cost_assignment.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\lama_ff_synergy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\h_m_landmarks.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\exploration.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\types.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\transition_system.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_strategy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_random.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_fh.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_bucket_based.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_bisimulation.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_strategy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_linear.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_dfp.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_and_shrink_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\labels.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\label_reduction.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\label_equivalence_relation.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\heuristic_representation.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\fts_factory.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\factored_transition_system.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\distances.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\utils_landmarks.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\utils.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\subtask_generators.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\split_selector.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\refinement_hierarchy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\domains.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\cartesian_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\additive_cartesian_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstract_state.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstract_search.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstraction.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\modified_operator_costs_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\modified_goals_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\domain_abstracted_task_factory.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\domain_abstracted_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\max_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\lm_cut_landmarks.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\lm_cut_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\hm_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\goal_count_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\ff_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\domain_transition_graph.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cg_cache.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cg_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cea_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\blind_search_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\additive_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\ipc_max_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\relaxation_heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\lp\lp_solver.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\lp\lp_internals.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\lazy_search.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\iterated_search.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\enforced_hill_climbing_search.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\eager_search.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\search_common.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets_ec.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets_simple.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\null_pruning_method.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\sum_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\weighted_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\pref_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\max_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\combining_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\g_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\const_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\timer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system_windows.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system_unix.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\rng.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\memory.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\math.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\markup.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\logging.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\language.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\hash.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\dynamic_bitset.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\countdown_timer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\collections.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\type_namer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\type_documenter.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\token_parser.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\synergy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\registries.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\plugin.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\predefinitions.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\parse_tree.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\options.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\option_parser.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\errors.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\doc_store.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\doc_printer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\bounds.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\any.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\type_based_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\tiebreaking_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\standard_scalar_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\pareto_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\open_list_factory.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\epsilon_greedy_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\bucket_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\alternation_open_list.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\variable_order_finder.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\task_tools.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\task_proxy.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\successor_generator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\state_registry.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\state_id.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\segmented_vector.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_statistics.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_space.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_progress.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_node_info.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engine.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\scalar_evaluator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\sampling.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\root_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\priority_queue.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning_method.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\plugin.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\per_state_information.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\option_parser_util.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\option_parser.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_cost.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\int_packer.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristic.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristic_cache.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\global_state.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\globals.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\global_operator.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluation_result.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluation_context.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\equivalence_relation.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\delegating_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cost_adapted_task.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\causal_graph.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\axioms.h" />
+    <ClInclude Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\abstract_task.h" />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\util.cc" >
+      <ObjectFileName>$(IntDir)/potentials/util.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\single_potential_heuristics.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\sample_based_potential_heuristics.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_optimizer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_max_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\potential_function.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\potentials\diverse_potential_heuristics.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\zero_one_pdbs_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\zero_one_pdbs.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\validation.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\types.cc" >
+      <ObjectFileName>$(IntDir)/pdbs/types.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pdb_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator_manual.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_generator_greedy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_systematic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_manual.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_hillclimbing.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_genetic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_generator_combo.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_database.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\pattern_collection_information.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\max_cliques.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\max_additive_pdb_sets.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\match_tree.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\incremental_canonical_pdbs.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\dominance_pruning.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\canonical_pdbs_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pdbs\canonical_pdbs.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\state_equation_constraints.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\pho_constraints.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\operator_counting_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\lm_cut_constraints.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_counting\constraint_generator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\util.cc" >
+      <ObjectFileName>$(IntDir)/landmarks/util.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_status_manager.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_graph_merged.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_graph.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_zhu_givan.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_rpg_sasp.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory_rpg_exhaust.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_factory.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_count_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\landmark_cost_assignment.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\lama_ff_synergy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\h_m_landmarks.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\landmarks\exploration.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\types.cc" >
+      <ObjectFileName>$(IntDir)/merge_and_shrink/types.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\transition_system.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_strategy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_random.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_fh.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_bucket_based.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\shrink_bisimulation.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_strategy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_linear.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_dfp.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\merge_and_shrink_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\labels.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\label_reduction.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\label_equivalence_relation.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\heuristic_representation.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\fts_factory.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\factored_transition_system.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\merge_and_shrink\distances.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\utils_landmarks.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\utils.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\subtask_generators.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\split_selector.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\refinement_hierarchy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\domains.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\cartesian_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\additive_cartesian_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstract_state.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstract_search.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cegar\abstraction.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\modified_operator_costs_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\modified_goals_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\domain_abstracted_task_factory.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\tasks\domain_abstracted_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\max_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\lm_cut_landmarks.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\lm_cut_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\hm_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\goal_count_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\ff_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\domain_transition_graph.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cg_cache.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cg_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\cea_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\blind_search_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\additive_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\ipc_max_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristics\relaxation_heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\lp\lp_solver.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\lp\lp_internals.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\lazy_search.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\iterated_search.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\enforced_hill_climbing_search.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\eager_search.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engines\search_common.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets_ec.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets_simple.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\stubborn_sets.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning\null_pruning_method.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\sum_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\weighted_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\pref_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\max_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\combining_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\g_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluators\const_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\timer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system_windows.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system_unix.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\system.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\rng.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\memory.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\math.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\markup.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\logging.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\utils\countdown_timer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\type_namer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\type_documenter.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\token_parser.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\synergy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\registries.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\plugin.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\predefinitions.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\parse_tree.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\options.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\option_parser.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\errors.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\doc_store.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\doc_printer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\options\bounds.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\type_based_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\tiebreaking_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\standard_scalar_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\pareto_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\open_list_factory.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\epsilon_greedy_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\bucket_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\open_lists\alternation_open_list.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\variable_order_finder.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\task_tools.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\task_proxy.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\successor_generator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\state_registry.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\state_id.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\segmented_vector.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_statistics.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_space.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_progress.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_node_info.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\search_engine.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\scalar_evaluator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\sampling.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\root_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\priority_queue.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\pruning_method.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\per_state_information.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\operator_cost.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\int_packer.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristic.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\heuristic_cache.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\global_state.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\globals.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\global_operator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluation_result.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\evaluation_context.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\equivalence_relation.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\delegating_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\cost_adapted_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\causal_graph.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\axioms.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\abstract_task.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\search\planner.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/ZERO_CHECK.vcxproj">
+      <Project>5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

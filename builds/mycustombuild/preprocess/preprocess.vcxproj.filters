@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\planner.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\axiom.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\causal_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\domain_transition_graph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\helper_functions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\max_dag.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\mutex_group.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\operator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\scc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\state.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\successor_generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\variable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{71F049E1-4659-30D3-B821-80E1F51F4CE2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

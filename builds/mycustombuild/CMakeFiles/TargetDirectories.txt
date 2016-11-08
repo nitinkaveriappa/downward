@@ -1,0 +1,8 @@
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/CMakeFiles/translate.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/CMakeFiles/ALL_BUILD.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/CMakeFiles/ZERO_CHECK.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/preprocess/CMakeFiles/preprocess.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/preprocess/CMakeFiles/ALL_BUILD.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/search/CMakeFiles/downward.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/search/CMakeFiles/ALL_BUILD.dir
+D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/VAL/CMakeFiles/ALL_BUILD.dir

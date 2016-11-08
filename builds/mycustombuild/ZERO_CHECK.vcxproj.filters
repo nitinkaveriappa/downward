@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\CMakeFiles\28bd9a107f38d880d61c0aa4ed64f75b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E7C6890-45E4-355C-AF36-232E4274F032}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

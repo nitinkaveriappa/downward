@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>preprocess</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">preprocess.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">preprocess</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">preprocess.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">preprocess</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\bin\Profile\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">preprocess.dir\Profile\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">preprocess</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/preprocess/Debug/preprocess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Debug/preprocess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/preprocess/Release/preprocess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Release/preprocess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Profile/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4800;4512;4706;4100;4127;4244;4702;4239;4996;4456;4458;4267;4505</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/preprocess/Profile/preprocess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/bin/Profile/preprocess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">Building Custom Rule D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src" "-BD:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild" --check-stamp-file "D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/src/preprocess/CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\builds\mycustombuild\preprocess\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\planner.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\axiom.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\causal_graph.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\domain_transition_graph.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\helper_functions.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\max_dag.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\mutex_group.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\operator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\scc.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\state.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\successor_generator.cc"  />
+    <ClCompile Include="D:\Google Drive\GMU\CS 580 - Introduction to Artificial Intelligence - Amarda Shehu\downward\src\preprocess\variable.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Google Drive/GMU/CS 580 - Introduction to Artificial Intelligence - Amarda Shehu/downward/builds/mycustombuild/ZERO_CHECK.vcxproj">
+      <Project>5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

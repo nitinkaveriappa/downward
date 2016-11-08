@@ -1,0 +1,41 @@
+(define (domain gripper-strips)
+   (:predicates (room ?r) //(room ?r)
+		(object ?o) //(ball ?b)
+		(robot ?ro) //(gripper ?g)
+		(at-room ?r) //(at-robby ?r)
+		(at ?o ?r) //(at ?b ?r)
+		(free ?ro) //(free ?g)
+		(wall ?r ?r)
+		(carry ?b ?ro)) //(carry ?o ?g))
+
+   (:action movewithoutobject
+       :parameters  (?from ?to)
+       :precondition (and  (room ?from) (room ?to) (at-room ?from))
+       :effect (and  (at-room ?to)
+		     (not (at-room ?from))))
+
+			 
+   (:action movewithobject
+       :parameters  (?from ?to)
+       :precondition (and  (room ?from) (room ?to) (at-room ?from))
+       :effect (and  (at-room ?to)
+		     (not (at-room ?from))))
+
+			 
+   (:action pickup 
+       :parameters (?obj ?room ?robot)
+       :precondition  (and  (object ?obj) (room ?room) (robot ?robot)
+			    (at ?obj ?room) (at-room ?room) (free ?robot))
+       :effect (and (carry ?obj ?robot)
+		    (not (at ?obj ?room)) 
+		    (not (free ?robot))))
+
+
+   (:action release
+       :parameters  (?obj  ?room ?robot)
+       :precondition  (and  (object ?obj) (room ?room) (robot ?robot)
+			    (carry ?obj ?robot) (at-room ?room))
+       :effect (and (at ?obj ?room)
+		    (free ?robot)
+		    (not (carry ?obj ?robot)))))
+

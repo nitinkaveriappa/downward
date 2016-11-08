@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{2A78536E-A703-343A-A97F-95D3505C27A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B} = {5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C} = {CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD} = {5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}
+		{89B2B380-0184-3289-9418-DAA4BDDB8370} = {89B2B380-0184-3289-9418-DAA4BDDB8370}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "downward", "search\downward.vcxproj", "{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B} = {5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocess", "preprocess\preprocess.vcxproj", "{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B} = {5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "translate", "translate.vcxproj", "{89B2B380-0184-3289-9418-DAA4BDDB8370}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B} = {5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Profile|Win32 = Profile|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A78536E-A703-343A-A97F-95D3505C27A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A78536E-A703-343A-A97F-95D3505C27A6}.Release|Win32.ActiveCfg = Release|Win32
+		{2A78536E-A703-343A-A97F-95D3505C27A6}.Profile|Win32.ActiveCfg = Profile|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Debug|Win32.Build.0 = Debug|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Release|Win32.ActiveCfg = Release|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Release|Win32.Build.0 = Release|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Profile|Win32.ActiveCfg = Profile|Win32
+		{5CB9AC5E-0A2A-32CA-B985-4256C2EF0B2B}.Profile|Win32.Build.0 = Profile|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Debug|Win32.Build.0 = Debug|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Release|Win32.ActiveCfg = Release|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Release|Win32.Build.0 = Release|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Profile|Win32.ActiveCfg = Profile|Win32
+		{CEB6A4BD-393E-3338-A8B5-FA237E5D8A6C}.Profile|Win32.Build.0 = Profile|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Debug|Win32.Build.0 = Debug|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Release|Win32.ActiveCfg = Release|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Release|Win32.Build.0 = Release|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Profile|Win32.ActiveCfg = Profile|Win32
+		{5B0E8709-BED7-3DBF-82CC-252F7D3A4DCD}.Profile|Win32.Build.0 = Profile|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Debug|Win32.ActiveCfg = Debug|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Debug|Win32.Build.0 = Debug|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Release|Win32.ActiveCfg = Release|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Release|Win32.Build.0 = Release|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Profile|Win32.ActiveCfg = Profile|Win32
+		{89B2B380-0184-3289-9418-DAA4BDDB8370}.Profile|Win32.Build.0 = Profile|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

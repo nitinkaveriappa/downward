@@ -1,0 +1,78 @@
+Problem:
+
+Planning
+In this project, you will gain experience with classical planning. First, download and install the FastDownward
+package following the instructions from
+http://www.fast-downward.org/ObtainingAndRunningFastDownward
+It is probably easier to compile the code on a Linux Ubuntu machine.
+
+Running Benchmarks
+Follow the instructions found here
+http://www.fast-downward.org/IpcPlanners
+on how to run some of the fast planners available in the package.
+As part of your project, you need to run one planner on three different benchmarks (choose any three from
+the available benchmarks). Report the solution found by the planner in each case.
+
+Creating your Own Benchmark
+Write in PDDL the problem where the robot has to pick up objects and transfer them to desired locations.
+More specifically, you are given several rooms R1; : : : ;Rn. Some of the rooms are connected with each
+other. There are several objects O1; : : : ;Om, with at most one object per room. A robot is located in one of
+the rooms. Your are also given goal rooms G1; : : : ;Gm for each of the objects. The robot can pick up only
+one object at a time. There can be at most one object in a room. If the robot has picked up an object, it can
+only go to a room that has no other objects.
+You will need to first write the domain file which defines the predicates and the actions necessary to solve
+this problem. You need to provide definitions for the following functions: MoveWithoutObject, MoveWith-
+Object, Pickup, Release.
+You also need to write a problem instance file which defines the initial and goal state. The problem instance
+should correspond to the picture 'Prob.jpeg'.
+Robot has to transfer object O1 in room R7, object O2 in room R2, and object O3 in room R9. Black
+rectangles represent walls.
+
+Solution:
+The copy of solution and output file is in the 'Solution' folder.
+
+
+
+Fast Downward is a domain-independent planning system.
+
+The following directories are not part of Fast Downward as covered by this
+license:
+./benchmarks
+./src/VAL
+./src/search/ext
+
+For the rest, the following license applies:
+
+Copyright (C) 2003-2016 Malte Helmert
+Copyright (C) 2008-2016 Gabriele Roeger
+Copyright (C) 2012-2016 Florian Pommerening
+Copyright (C) 2010-2015 Jendrik Seipp
+Copyright (C) 2010, 2011, 2013-2015 Silvan Sievers
+Copyright (C) 2013, 2015 Salome Simon
+Copyright (C) 2014, 2015 Patrick von Reth
+Copyright (C) 2015 Manuel Heusner, Thomas Keller
+Copyright (C) 2009-2014 Erez Karpas
+Copyright (C) 2014 Robert P. Goldman
+Copyright (C) 2010-2012 Andrew Coles
+Copyright (C) 2010, 2012 Patrik Haslum
+Copyright (C) 2003-2011 Silvia Richter
+Copyright (C) 2009-2011 Emil Keyder
+Copyright (C) 2010, 2011 Moritz Gronbach, Manuela Ortlieb
+Copyright (C) 2011 Vidal Alcázar Saiz, Michael Katz, Raz Nissim
+Copyright (C) 2010 Moritz Goebelbecker
+Copyright (C) 2007-2009 Matthias Westphal
+Copyright (C) 2009 Christian Muise
+
+Fast Downward is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Fast Downward is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
+
+For contact information see http://www.fast-downward.org/.
